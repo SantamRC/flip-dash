@@ -10,14 +10,12 @@ const productSchema = mongoose.Schema({
     cost: Number,
     discount: String,
   },
-  qty:Number,
-  category:String,
+  qty: Number,
+  category: String,
   discount: String,
-  tagline: String,
   url: String,
-  detailUrl: String,
 });
 
 const Product = new mongoose.model("product", productSchema);
 
-module.exports = Product
+module.exports=Product;
