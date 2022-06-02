@@ -1,0 +1,18 @@
+{
+  "name": "flip-dash",
+  "version": "1.0.0",
+  "description": "Flipkart Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.ts"
+  },
+  "author": "SantamRC",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.0"
+  }
+}
