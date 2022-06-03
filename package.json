@@ -4,7 +4,8 @@
   "description": "Flipkart Dashboard",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "server": "node server"
   },
   "author": "SantamRC",
   "license": "ISC",
