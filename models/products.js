@@ -1,18 +1,14 @@
 const mongoose = require("mongoose");
 
 const productSchema = mongoose.Schema({
-  title: {
-    shortTitle: String,
-    longTitle: String,
-  },
+  title: String,
   price: {
     mrp: Number,
-    cost: Number,
-    discount: String,
+    discount: Number,
   },
-  qty: Number,
   category: String,
-  discount: String,
+  brand: String,
+  rating: Number,
   url: String,
 });
 

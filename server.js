@@ -3,9 +3,11 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 6000;
 const mongoose = require("mongoose");
+const cors = require("cors");
 const Product = require("./models/products");
 
 app.use(express.json());
+app.use(cors());
 
 mongoose
   .connect(`mongodb://localhost:27017`, {
@@ -31,7 +33,7 @@ app.post("/", (req, res) => {
 
 app.get("/Products", (req, res) => {
   try {
-    Product.findOne().then((results) => {
+    Product.find().then((results) => {
       res.send(results);
     });
   } catch (err) {
