@@ -4,10 +4,15 @@ const app = express();
 const port = process.env.PORT || 6000;
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 const Product = require("./models/products");
 
 app.use(express.json());
 app.use(cors());
+
+app.get('/',(req, res) => {
+  res.send(express.static(path.join(__dirname,"client","build","index.html")))
+})
 
 mongoose
   .connect(`mongodb://localhost:27017`, {
